@@ -15,4 +15,20 @@ app.post('/spi', (req, resp) => {
     resp.send("Aula SPI, aula 01 - service 2 ")
 })
 
+
+
+app.put('/ads', (req, resp) => {
+    resp.send("Aula ADS - PUT")
+})
+
+app.delete('/deletes', (req, resp) => {
+    resp.send("Aula ADS - DELETE")
+})
+
+app.all('/all', (req, resp) => {
+    resp.send("Aceita TUDO")
+})
+
+
+
 app.listen(port, () => { console.log('Aplicação com express porta ' + port) })
