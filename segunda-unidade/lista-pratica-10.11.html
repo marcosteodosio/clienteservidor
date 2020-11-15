@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Exercício 01</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Calcular Aumento</h2>
+    <form action="calcularaumento.php" method="GET">
+        <div class="form-group">
+          <label for="salario">Salário</label>
+          <input type="number" name="salario" class="form-control" id="salario" aria-describedby="salarioSmall" placeholder="Informar salário">
+          <small id="salarioSmall" class="form-text text-muted">Informar salário.</small>
+        </div>
+        <div class="form-group">
+          <label for="percentual">Percentual Aumento</label>
+          <input type="number" name="percentual" class="form-control" id="percentual" aria-describedby="percentualSmall" placeholder="% de aumento">
+          <small id="percentualSmall" class="form-text text-muted">Informar salário.</small>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Calcular Aumento</button>
+      </form>
+</div>
+</body>
+</html>
